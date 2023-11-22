@@ -68,3 +68,8 @@ https://github.com/smartinternz02/SI-GuidedProject-611637-1700368667
 # Demonstration Link :  
 https://drive.google.com/file/d/1lmKA9Ove_yYsgW3XuwBIC58aICoNpXJY/view?usp=drive_link
 
+# Screenshot
+[Webpage screenshot](https://github.com/smartinternz02/SI-GuidedProject-611637-1700368667/assets/96284263/7994feb0-50b7-4279-93d8-0abf0e6602f0)
+
+
+
