@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1a301f8488.js" crossorigin="anonymous"></script>
+
+
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='../static/js/main.js') }}" type="text/javascript"></script>
+
+    <!-- <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script> -->
+
+    <title>AgroSafe.ai</title>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header class="navbar">
+        <div class="logo">
+            <img src="static/images/logo2.png" alt="img">
+            <h2>AgroSafe.ai</h2>
+        </div>
+        <ul class="nav-ul">
+            <li class="nav-li"><a href="#sec1">Home</a></li>
+            <li class="nav-li"><a href="#sec2">About</a></li>
+            <li class="nav-li"><a href="#sec3">Predict</a></li>
+            <li class="nav-li"><a href="#sec5">Team</a></li>
+        </ul>
+    </header>
+
+    <section id="sec1">
+        <div class="text">
+            <h1>FARM THREAT CLASSFIER</h1>
+            <h3>Safeguarding Agriculture : AI-Enables Prognostication of Farm Insect Threats</h3>
+            <i class="fa-solid fa-angles-down" onclick="scrollToSection('sec2')"></i>
+        </div>
+    </section>
+
+    <section id="sec2">
+        <div class="left">
+            <h1>about</h1>
+            <p>Agriculture, serving as the backbone of human sustenance, faces constant threats from harmful
+                insects capable of causing substantial damage to crops, resulting in significant economic losses.
+                Early identification and prediction of the presence of dangerous farm insects play a pivotal role
+                in implementing effective pest control measures, ensuring the security of food production. In recent
+                years,
+                advanced Artificial Intelligence (AI) technologies have emerged as powerful tools for accurate and
+                timely prediction
+                of insect infestations on farms, revolutionizing the way farmers approach pest management.</p>
+            <h1>species this model can identify</h1>
+            <p>'Africanized Honey Bees (Killer Bees)', 'Corn Borers', 'Armyworms', 'Aphids', 'Brown Marmorated Stink
+                Bugs',
+                'Corn Earworms', 'Fall Armyworms', 'Citrus Canker', 'Colorado Potato Beetles', 'Cabbage Loopers',
+                'Tomato Hornworms',
+                'Fruit Flies', 'Spider Mites', 'Western Corn Rootworms', and 'Thrips'.</p>
+            <i class="fa-solid fa-angles-down" onclick="scrollToSection('sec3')"></i>
+        </div>
+        <div class="right">
+            <img src="../static/images/sec2img.jpg" alt="img">
+        </div>
+    </section>
+
+    <section id="sec3">
+
+            <div class="left">
+                <h4>Upload Image Here To Identify the Insect</h4>
+                <h5>Image should be in .png, .jpg, .jpeg formats only</h5>
+                <form action="http://localhost:5000/" id="upload-file" method="post" enctype="multipart/form-data">
+                    <label for="imageUpload" class="upload-label">
+                        Choose...
+                    </label>
+                    <input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+                </form>
+            </div>
+                <div class="image-section" style="display:none;">   
+                    <div class="img-preview">
+                        <div id="imagePreview">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-info btn-lg " id="btn-predict">Predict!</button>
+                    </div>
+                    <div class="loader" style="display:none;"></div>
+                </div>
+
+    </section>
+
+    <section id="sec4">
+        <div class="left">
+            <h3>
+                <span id="result" ></span>
+            </h3>
+            <h4>
+                <span id="details"></span>
+            </h4>
+        </div>
+        <div class="right">
+            <h3>
+                <span id="rec"></span>
+            </h3>
+            <h4>
+                <span id="instd_det"></span>
+            </h4>
+        </div>
+    </section>
+
+    <section id="sec5">
+        <div class="uptext">
+            <h1>Our Team</h1>
+            <h3>In our collaborative journey, each team member brings unique skills and perspectives, fostering a dynamic and innovative environment for success.</h3>
+        </div>
+        <div class="contributers">
+            <div class="cont">
+                <div class="img-div">
+                    <img src="../static/images/ak.jpg" alt="Img" id="a">
+                </div>
+                <h3>Aakash Bhowmick</h3>
+                <h4>FullStack Developer</h4>
+            </div>
+            <div class="cont">
+                <div class="img-div">
+                    <img src="../static/images/sappy.jpg" alt="Img" id="b">
+                </div>
+                <h3>Saptarshi Mukherjee</h3>
+                <h4>Data Analyst</h4>
+            </div>
+            <div class="cont">
+                <div class="img-div">
+                    <img src="../static/images/subh.jpg" alt="Img" id="c">
+                </div>
+                <h3>Subhradip Bodhak</h3>
+                <h4>Model Validator</h4>
+            </div>
+            <div class="cont">
+                <div class="img-div">
+                    <img src="../static/images/supra.jpg" alt="Img" id="d">
+                </div>
+                <h3>Supratik Pal</h3>
+                <h4>Model Developer</h4>
+            </div>
+        </div>
+        <h1 class="team">Contact Us</h1>
+        <div class="social">
+        
+                <button class="btn btn-primary btn-lg btn-default" type="button">
+                    <a href="#" class="network-name"><i class="fa-brands fa-google-plus-g"></i>&nbsp;Google+</a>
+                </button>
+            
+                <button class="btn btn-primary btn-lg btn-default" type="button">
+                    <a href="#" class="network-name"><i class="fa-brands fa-twitter"></i>&nbsp;Twitter</a>
+                </button>
+                
+                <button class="btn btn-primary btn-lg btn-default" type="button">
+                    <a href="https://github.com/Aakash-777" class="network-name"><i class="fa-brands fa-github"></i>&nbsp;Github</a>
+                </button>
+            
+            
+        </div>
+    </section>
+    <div class="end">
+        <h5 class="copyr8">Copyright AgroSafe.ai ©  2023</h5>
+    </div>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display ="none";
+        })
+
+
+        function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    </script>
+
+
+</body>
+
+</html>
