@@ -69,7 +69,11 @@ https://github.com/smartinternz02/SI-GuidedProject-611637-1700368667
 https://drive.google.com/file/d/1lmKA9Ove_yYsgW3XuwBIC58aICoNpXJY/view?usp=drive_link
 
 # Screenshot
-[Webpage screenshot](https://github.com/smartinternz02/SI-GuidedProject-611637-1700368667/assets/96284263/7994feb0-50b7-4279-93d8-0abf0e6602f0)
+- 1.[Webpage screenshot](https://github.com/smartinternz02/SI-GuidedProject-611637-1700368667/assets/96284263/7994feb0-50b7-4279-93d8-0abf0e6602f0)
+- 2.[Uploading image for the detection of the insect](https://github.com/smartinternz02/SI-GuidedProject-611637-1700368667/assets/96284263/09d6f6d9-9d4a-4682-9adc-af770b37c66a)
+- 3.[The prediction and the recommendation](https://github.com/smartinternz02/SI-GuidedProject-611637-1700368667/assets/96284263/3715a954-4647-43ea-97e1-97ce958fd246)
+
+
 
 
 
