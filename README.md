@@ -2,10 +2,10 @@
 ## **Website Name - Agrosafe.ai**
 ### **Project Name - Safeguarding Agriculture: AI-Enabled Prognostication of Farm Insect Threats**
 # **Team Members**
-- @saptarshi11
-- @Aakash-777
-- @subhradip-bo
-- @Supratik5620
+- [@saptarshi11 ](https://github.com/saptarshi11)
+- [@Aakash-777](https://github.com/Aakash-777)
+- [@subhradip-bo](https://github.com/subhradip-bo)
+- [@Supratik5620](https://github.com/Supratik5620)
 
 # Project Design
 ![WhatsApp Image 2023-11-21 at 20 51 20_4e34397a](https://github.com/smartinternz02/SI-GuidedProject-611637-1700368667/assets/96284263/2904d4d7-77d4-4af8-958f-93540f4973dc)
